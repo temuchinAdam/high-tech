@@ -1,0 +1,250 @@
+body{
+    margin: 0;
+    font-family:  'Roboto', sans-serif;
+    font-size: 15px;
+    color: #333;
+    line-height: 1.6;
+    
+}
+a{
+    text-decoration: none;
+    color: black;
+    cursor: pointer;
+}
+*,
+*:before,
+*:after{
+    box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6{
+    margin: 0;
+}
+
+.page{
+    overflow: hidden;
+}
+
+.header{
+    padding-top: 18px;
+    padding-bottom: 14px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    font-family: sans-serif;
+   
+    
+    background: #009DE9;
+}
+.header__inner{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    color: white;
+   
+    display: flex;
+    vertical-align: top;
+    position: relative;
+    font-size: 30px;
+}
+
+
+.time{
+    margin-left: 60px ;
+    margin-right: 60px ;    
+}
+
+.date{
+ margin-left:auto; 
+ margin-right: 60px;
+}
+
+.intro{
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    height: 80%;
+    background: url('/src/intro.jpg') center no-repeat;
+    background-size: cover;
+    -webkit-background-size: cover;
+    
+     position: relative;
+}
+.container{
+    background: url('/src/background_1.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    width: 100%;
+    height: 1129px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.container_forOtherPages{
+    background: url('/src/background_2.jpg');
+    background-size: cover;
+    -webkit-background-size: cover;
+    width: 100%;
+    height: 1129px;
+    
+    display: flex;
+    flex-direction: column;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    margin-left:15px;
+    margin-top: 30px;
+    margin-right:15px;
+}
+.wrap{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.text_wrap{
+    font-family: Roboto;
+    font-size: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+.wrap:last-child{
+    justify-content: center;
+}
+.rectangle_wrapper{
+  margin: 60px;
+}
+.rectangle{
+width: 300px;
+height: 250px;
+left: 0px;
+top: 0px;
+
+background: #FFFFFF;
+box-shadow: 2px 11px 16px rgba(100, 105, 108, 0.24);
+border-radius: 45px;
+}
+.rectangle_content{
+    width: 300px;
+    height: 250px;
+}
+.rectangle_text{
+   
+    font-family: Roboto;
+    font-size: 24px;
+    text-align: right;
+    padding-top: 60px;
+    padding-right: 20px;
+}
+.rectangle_img{
+    margin-left: 25px;
+}
+
+.footer{
+    background: url(/src/footer.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    display: flex;
+    flex-direction: column;
+
+}
+.footer_wrap{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+    font-size: 16px;
+    color: white;
+}
+.footer_wrap:left{
+    margin: 15px;
+}
+.footer_el{
+    margin-right: 45px;
+    margin-left: 45px;
+}
+.footer_logo{
+    margin-top: 12px;
+}
+.footer_string{
+    display: flex;
+    justify-content: center;
+    font-family: Montserrat;
+    font-size: 14px;
+    color: white; 
+}
+.footer_logo2{
+    margin-top: 16px;
+}
+.transition-fade {
+    transition: 0.4s;
+    opacity: 1;
+  }
+  
+  html.is-animating .transition-fade {
+    opacity: 0;
+  }
+
+.item{
+    
+    height: 608px;
+    
+    position: relative;
+}
+.photo{
+    width: 100%;
+    height: 100%;
+    
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    
+}
+
+
+
+.slick-arrow{
+    margin-left: 20px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: block;
+    font-size: 0;
+    color: transparent;
+    border: 0;
+    background: none;
+    position: absolute;
+    top: 50%;
+    z-index: 1;
+    transform:translateY(-50%);
+
+}
+
+.slick-arrow:focus{
+    outline: 0;
+}
+
+.slick-arrow:after{
+    content: '';
+display: block;
+width: 16px;
+height: 16px;
+border-top: 2px solid #ccc;
+border-left: 2px solid #ccc;
+
+
+
+}
+ .slick-prev {
+    left: 0;
+    transform: rotate(-45deg)
+}
+ .slick-next{
+    right: 0;
+    transform: rotate(135deg)
+}

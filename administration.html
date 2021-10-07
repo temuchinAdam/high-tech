@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Roboto:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+        <title>BelPost</title>
+        <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+        <script src="https://kit.fontawesome.com/697fddb5cc.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header class='header' id='header'> 
+            <div class='header__inner'>
+                <div class='time' id='time'></div>
+                <div class='temperature' id='temperature'></div>
+                <img src="././src/weather.jpg" alt="" style="height: 20px; margin-bottom: 33px;">
+                <div class='date' id='date'></div>
+            </div>
+        </header>
+
+        <section class="section" id="intro__img">
+            <div class="intro" id='intro'>
+                    <div class="intro__inner">
+                        <div data-slider>
+                            <div>
+                                <div class="item">
+                                    <img class="photo" src="/src/intro.jpg" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="item">
+                                    <img class="photo" src="/src/intro2.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>  
+                    </div>
+            </div>        
+        </section>
+        <main id="swup" class="transition-fade">    
+            <div class='container_forOtherPages' id='container_forOtherPages'>
+                <div class='nav'>
+                    <a href="index.html"><img src="/src/Home.png" alt=""></a>
+                    <div style="font-size: 26px; font-family: sans-serif; font-weight: 700;">Административные процедуры</div>
+                    <a onclick="javascript:history.back(); return false"><img src="/src/down.png" alt=""></a> 
+                </div>
+                <div class="wrap">
+                    <div class='rectangle_wrapper'>
+                        <div class='rectangle'>
+                            <div class='rectangle_content'>
+                                <a  href="page.html">
+                                    <p class='rectangle_text'>Страница 1</p>
+                                    <img class="rectangle_img" src="/src/5.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='rectangle_wrapper'>
+                        <div class='rectangle'>
+                            <div class='rectangle_content'>
+                                <a href="">
+                                    <p class='rectangle_text'>Процедура 2</p>
+                                    <img class="rectangle_img" src="/src/5.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class='rectangle_wrapper'>
+                        <div class='rectangle'>
+                            <div class='rectangle_content'>
+                                <a href="">
+                                    <p class='rectangle_text'>Процедура 3</p>
+                                    <img class="rectangle_img" src="/src/5.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="wrap">
+                    <div class='rectangle_wrapper'>
+                        <div class='rectangle'>
+                            <div class='rectangle_content'>
+                                <a href="">
+                                    <p class='rectangle_text'>Процедура 4</p>
+                                    <img class="rectangle_img" src="/src/5.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    
+        <footer class="footer" id="contact">
+            <div class='footer_string'>
+                <div class='footer_wrap'>
+                    <div class='footer_el'>
+                            <p>Национальный оператор почтовой <br> связи Республики Беларусь</p>
+                    </div> 
+                    <div class='footer_logo'>
+                            <img src="/src/178016952.png" alt="">  
+                    </div>  
+                    <div class='footer_el'>
+                            <p>Покупайте белорусские товары <br> на shop.belpost.by</p>
+                    </div>
+                </div>
+            </div>
+            <div class='footer_string'>
+                <div class='bottom_text'></div>
+                    <div class='footer_el'>
+                        <p>Разработано компанией</p>
+                    </div>
+                    <div class='footer_logo2'>   
+                        <img src="/src/TehnoSky.png" alt="">
+                    </div>    
+                    <div class='footer_el'> 
+                        <p>High-tech.by</p>
+                    </div>
+                </div>    
+            </div>
+        </footer>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+        <script src="script.js"></script>
+    </body>        
+</html>
